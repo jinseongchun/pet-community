@@ -1,38 +1,261 @@
-.App {
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.product-title {
+  display: inline;
+  color: #ffc000;
+}
+/* Common CSS */
+.headline-share {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headline-share h1 {
+  color: #ffc000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headline-share p {
+  font-weight: bold;
+}
+.headline-share h1 {
+  font-size: 44px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.headline-share h1:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.headline-share p {
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ############## Header ############## */
+a {
+  text-decoration: none;
+  color: black;
+  float: left;
+}
+.inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.head-container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.head-container .head-brand {
+  display: flex;
+  align-items: center;
+}
+
+.head-container .head-brand a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.head-container .head-blog {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.head-container .head-blog a {
+  margin-left: 20px;
+}
+
+/* ################# section : ceo-access ################# */
+.ceo-access {
+  padding-bottom: 0;
+  margin-top: 100px;
+}
+.ceo-inner,
+.access-inner {
+  width: 1200px;
+  margin: auto;
+}
+.ceo-content {
+  margin-top: 50px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  padding: 50px 0;
+}
+.ceo-content > div {
+  float: left;
+  width: 50%;
+}
+.ceo-left {
+  padding-right: 50px;
+}
+.ceo-left img {
+  width: 50px;
+}
+.ceo-left h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ceo-right {
+  text-align: center;
+}
+.ceo-right > div {
+  float: left;
+  padding: 20px;
+}
+.ceo-msg {
+  width: 60%;
+}
+.ceo-msg h3 {
+  font-size: 28px;
+  color: #009b72;
+}
+.ceo-msg h3 big {
+  display: block;
+}
+.ceo-photo {
+  width: 40%;
+}
+.ceo-photo img {
+  border-radius: 15px;
+  width: 100%;
+}
+.access-content {
+  padding: 50px 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.access-content > div {
+  float: left;
+  width: 50%;
+}
+.access-left {
+  padding-right: 50px;
+  padding-top: 50px;
+}
+.access-left h2 {
+  font-size: 34px;
+}
+.access-right {
+  text-align: center;
+}
+.access-right img {
+  display: block;
+  float: right;
+}
+.btn-download {
+  margin-top: 30px;
+}
+
+/* ################# section : feature ################# */
+.feature {
+  margin-top: 100px;
+}
+.feature-inner {
+  width: 1200px;
+  margin: auto;
+}
+.feature-content {
+  overflow: hidden;
+  margin: 100px 0;
+}
+.feature-content > div {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.feature-mockup-rtl-wow img {
+  border-radius: 15px;
+}
+.feature-about {
+  padding-top: 100px;
+}
+.feature-about h2 {
+  font-size: 30px;
+}
+
+/* ############## Footer ############## */
+
+footer {
+  background-color: #ffc000;
+  color: white;
+  font-size: 14px;
+  padding: 60px 0;
+  margin-top: 150px;
+}
+.footer-inner {
+  width: 1200px;
+  margin: auto;
+}
+.footer-content {
+  overflow: hidden;
+}
+.footer-content > div {
+  float: left;
+}
+.footer-logo {
+  width: 15%;
+}
+.copyright {
+  width: 85%;
+  overflow: hidden;
+}
+.footer-logo img {
+}
+.policy-sns {
+  overflow: hidden;
+  border-bottom: 1px solid #32456e;
+  padding-bottom: 20px;
+}
+.policy {
+  float: left;
+}
+.policy span:first-child a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.policy span:first-child em {
+  font-style: normal;
+  margin: 10px;
+  color: #777;
+}
+.policy span:last-child {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.address {
+  padding-top: 20px;
+}
+.address span {
+  display: block;
+}
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    max-width: 1200px;
   }
 }
