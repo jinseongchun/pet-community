@@ -1,0 +1,19 @@
+.Gallery-container {
+  margin-top: 100px;
+}
+
+.Gallery-container .item {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1200px;
+  display: grid;
+  gap: 50px 150px;
+  white-space: nowrap;
+  grid-template-columns: 300px 300px 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Gallery-container .item {
+    gap: 50px 50px;
+  }
+}
