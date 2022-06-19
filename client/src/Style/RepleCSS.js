@@ -24,8 +24,9 @@ const RepleUploadDiv = styled.div`
     input {
       padding: 10px;
       height: 100%;
-      border-radius: 10px 0px 0px 10px;
-      border: 0.5px solid #c6c6c6;
+      border-radius: 10px;
+      border: 1px solid black;
+      margin-right: 10px;
 
       &:active,
       &:focus {
@@ -34,14 +35,14 @@ const RepleUploadDiv = styled.div`
     }
     button {
       height: 100%;
-      border-radius: 0px 10px 10px 0px;
-      border: 0.5px solid #c6c6c6;
+      border-radius: 10px;
+      border: 1px solid black;
       font-weight: bold;
-      background-color: #c6c6c6;
+      background-color: white;
       &:hover,
       &:active {
-        border: 0.5px solid darkgrey;
-        background-color: darkgrey;
+        border: 1px solid #ffa000;
+        background-color: #ffa000;
       }
     }
   }
@@ -64,9 +65,15 @@ const RepleListDiv = styled.div`
 `;
 
 const RepleContentDiv = styled.div`
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03), 0px 7.5px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px 10px;
+  padding: 20px;
   margin-bottom: 10px;
+  background-color: #ffc000;
+  .content {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
   .author {
     display: flex;
     margin-bottom: 5px;
@@ -78,7 +85,6 @@ const RepleContentDiv = styled.div`
       p {
         font-size: 12px;
         font-weight: bold;
-        color: darkgrey;
         margin-left: 10px;
       }
     }
@@ -121,7 +127,6 @@ const RepleContentDiv = styled.div`
   .time {
     font-size: 10px;
     margin-bottom: 5px;
-    color: lightgrey;
   }
   p {
     margin-bottom: 0px;

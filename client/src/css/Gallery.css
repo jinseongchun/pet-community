@@ -1,11 +1,11 @@
 .Gallery-container {
+  margin: 0 auto;
+  width: 1200px;
   margin-top: 100px;
 }
 
 .Gallery-container .item {
-  margin: 0 auto;
   margin-top: 100px;
-  width: 1200px;
   display: grid;
   gap: 50px 150px;
   white-space: nowrap;

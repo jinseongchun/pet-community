@@ -2,17 +2,21 @@ import styled from "@emotion/styled";
 
 const UploadDiv = styled.div`
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 5rem;
+  height: auto;
   margin-bottom: 1rem;
 `;
 
 const UploadForm = styled.form`
-  width: 80%;
+  width: 1200px;
+  background: #ffc000;
+  padding: 30px;
+  border-radius: 15px;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   #title {
-    border-radius: 10px;
     border: 1px solid #c6c6c6;
     padding: 10px;
     margin-bottom: 10px;
@@ -25,7 +29,6 @@ const UploadForm = styled.form`
   textarea {
     min-height: 350px;
     resize: none;
-    border-radius: 10px;
     border: 1px solid #c6c6c6;
     padding: 10px;
     &:active,
@@ -48,28 +51,35 @@ const UploadForm = styled.form`
     }
   }
   label {
+    font-size: 1.5rem;
     font-weight: bold;
     margin-top: 10px;
+    color: white;
   }
   @media (max-width: 756px) {
     width: 90%;
   }
 `;
 
+const UploadTitleDiv = styled.div`
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+`;
 const UploadButtonDiv = styled.div`
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
   button {
     border-radius: 15px;
+    border-color: black;
     padding: 5px 10px;
-    background-color: black;
-    color: white;
-    border: 1px solid black;
+    background-color: white;
+    font-weight: bold;
     &:hover {
-      background-color: white;
-      color: black;
-      border: 1px solid black;
+      background-color: blue;
+      color: white;
     }
     &:nth-last-of-type(1) {
       margin-left: 10px;
@@ -77,4 +87,4 @@ const UploadButtonDiv = styled.div`
   }
 `;
 
-export { UploadDiv, UploadForm, UploadButtonDiv };
+export { UploadDiv, UploadForm, UploadTitleDiv, UploadButtonDiv };

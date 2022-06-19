@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const PostDiv = styled.div`
-  padding-top: 1rem;
+  padding-top: 5rem;
   padding-bottom: 1rem;
   max-width: 756px;
   margin: 0 auto !important;
@@ -22,15 +22,24 @@ const SpinnerDiv = styled.div`
 const Post = styled.div`
   width: 100%;
   height: auto;
-  background: #ffffff;
-  padding: 30px 20px;
-  box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.03),
-    0px 15px 12px rgba(0, 0, 0, 0.1);
+  background: #ffc000;
+  padding: 30px;
+  border-radius: 15px;
+
   h1 {
     font-weight: bold;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
   }
   p {
     margin-bottom: 0px;
+  }
+  .content {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
   }
   .author {
     display: flex;
@@ -38,7 +47,6 @@ const Post = styled.div`
     margin-top: 10px;
     margin-bottom: 10px;
     p {
-      color: darkgrey;
       margin-bottom: 0px;
       margin-left: 10px;
       &.time {
@@ -70,20 +78,18 @@ const BtnDiv = styled.div`
       color: black;
       border: 1px solid black;
       &:hover {
-        background-color: black;
+        background-color: blue;
         color: white;
-        border: 1px solid black;
       }
     }
     &.delete {
       margin-left: 10px;
-      background-color: red;
-      color: white;
-      border: 1px solid red;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
       &:hover {
-        background-color: white;
-        color: red;
-        border: 1px solid red;
+        background-color: red;
+        color: white;
       }
     }
   }

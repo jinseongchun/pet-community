@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { LoginDiv } from "../../Style/UserCSS.js";
+import { LoginDiv, LoginTitleDiv } from "../../Style/UserCSS.js";
 
 import firebase from "../../firebase.js";
 
@@ -47,6 +47,7 @@ function Login() {
 
   return (
     <LoginDiv>
+      <LoginTitleDiv>로그인 페이지</LoginTitleDiv>
       <form>
         <label>이메일</label>
         <input

@@ -98,7 +98,7 @@ function RepleContent(props) {
         )}
       </div>
       <p className="time">
-        {SetTime(props.reple.createdAt, props.reple.updatedAt)}
+        작성일: {SetTime(props.reple.createdAt, props.reple.updatedAt)}
       </p>
       {EdifFlag ? (
         <RepleUploadDiv>
@@ -130,7 +130,7 @@ function RepleContent(props) {
           </div>
         </RepleUploadDiv>
       ) : (
-        <p>{props.reple.reple}</p>
+        <p className="content">{props.reple.reple}</p>
       )}
     </RepleContentDiv>
   );

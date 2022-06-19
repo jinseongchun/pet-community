@@ -1,5 +1,12 @@
 import styled from "@emotion/styled";
 
+const LoginTitleDiv = styled.div`
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+`;
+
 const LoginDiv = styled.div`
   width: 50%;
   max-width: 360px;
@@ -8,8 +15,8 @@ const LoginDiv = styled.div`
   form {
     width: 70%;
     padding: 20px;
-    box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.03),
-      0px 15px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffc000;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     label {
@@ -29,14 +36,13 @@ const LoginDiv = styled.div`
     button {
       border-radius: 15px;
       padding: 5px 10px;
-      background-color: black;
-      color: white;
+      background-color: white;
       border: 1px solid black;
       margin-top: 10px;
       &:hover {
-        background-color: white;
+        background-color: #ffa000;
         color: black;
-        border: 1px solid black;
+        border: 1px solid #ffa000;
       }
     }
     @media (max-width: 756px) {
@@ -50,6 +56,7 @@ const LoginDiv = styled.div`
 `;
 
 const MyPageDiv = styled.div`
+  margin-top: 100px;
   width: 100vw;
   height: 100vh;
   form {
@@ -68,17 +75,16 @@ const MyPageDiv = styled.div`
     button {
       border-radius: 15px;
       padding: 5px 10px;
-      background-color: black;
-      color: white;
+      background-color: white;
       border: 1px solid black;
       margin-top: 10px;
       &:hover {
-        background-color: white;
+        background-color: #ffa000;
         color: black;
-        border: 1px solid black;
+        border: 1px solid #ffa000;
       }
     }
   }
 `;
 
-export { LoginDiv, MyPageDiv };
+export { LoginTitleDiv, LoginDiv, MyPageDiv };

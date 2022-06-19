@@ -26,6 +26,7 @@ const Header = () => {
           <div className="head-blog">
             {user.accessToken ? (
               <>
+                <a href={`/mycart`}>장 바 구 니</a>
                 <a href="/" onClick={() => LogoutHandler()}>
                   로 그 아 웃
                 </a>

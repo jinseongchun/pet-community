@@ -7,6 +7,10 @@ const userSchema = new mongoose.Schema(
     displayName: String,
     uid: String,
     photoURL: String,
+    cart: {
+      type: Array,
+      default: [],
+    },
   },
   { collection: "users" }
 );

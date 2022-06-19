@@ -20,9 +20,7 @@ const MultiCarousel = ({ PostList, controls = false, width = 1000 }) => {
   return (
     <div className="custom-multicarousel" style={{ maxWidth: width }}>
       <div className="section-name">
-        <a href="/gallery">
-          <h3>애완동물 갤러리</h3>
-        </a>
+        <h3>애완동물 갤러리</h3>
       </div>
       <div
         className="custom-carousel-inner"

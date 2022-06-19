@@ -40,22 +40,6 @@ router.post("/namecheck", (req, res) => {
     });
 });
 
-router.post("/namecheck", (req, res) => {
-  User.findOne({ displayName: req.body.displayName })
-    .exec()
-    .then((doc) => {
-      let check = true;
-      if (doc) {
-        check = false;
-      }
-      res.status(200).json({ success: true, check });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(400).json({ success: false });
-    });
-});
-//setUpload("react-community/user")
 router.post(
   "/profile/img",
   setUpload("pet-community/user"),
@@ -67,6 +51,7 @@ router.post(
 router.post("/profile/update", (req, res) => {
   let temp = {
     photoURL: req.body.photoURL,
+    displayName: req.body.displayName,
   };
   User.updateOne({ uid: req.body.uid }, { $set: temp })
     .exec()

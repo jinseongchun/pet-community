@@ -1,6 +1,5 @@
 var express = require("express");
 var router = express.Router();
-const multer = require("multer");
 
 const { Post } = require("../Model/Post.js");
 const { Counter } = require("../Model/Counter.js");

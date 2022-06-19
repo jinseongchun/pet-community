@@ -56,28 +56,30 @@ const Carousel = ({
   }, []);
 
   return (
-    <div className="custom-carousel" style={{ maxWidth: width }}>
-      <div
-        className="custom-carousel-inner"
-        style={{ transform: `translateX(${-currentSlide * 100}%)` }}
-      >
-        {slides.map((slide, index) => (
-          <CarouselItem
-            slide={slide}
-            key={index}
-            stopSlide={stopSlideTimer}
-            startSlide={startSlideTimer}
+    <div className="carousel-Form">
+      <div className="custom-carousel" style={{ maxWidth: width }}>
+        <div
+          className="custom-carousel-inner"
+          style={{ transform: `translateX(${-currentSlide * 100}%)` }}
+        >
+          {slides.map((slide, index) => (
+            <CarouselItem
+              slide={slide}
+              key={index}
+              stopSlide={stopSlideTimer}
+              startSlide={startSlideTimer}
+            />
+          ))}
+        </div>
+        {indicators && (
+          <CarouselIndicators
+            slides={slides}
+            currentIndex={currentSlide}
+            switchIndex={switchIndex}
           />
-        ))}
+        )}
+        {controls && <CarouselControls prev={prev} next={next} />}
       </div>
-      {indicators && (
-        <CarouselIndicators
-          slides={slides}
-          currentIndex={currentSlide}
-          switchIndex={switchIndex}
-        />
-      )}
-      {controls && <CarouselControls prev={prev} next={next} />}
     </div>
   );
 };

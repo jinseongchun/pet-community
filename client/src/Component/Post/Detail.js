@@ -17,7 +17,7 @@ function Detail(props) {
 
   const SetTime = (a, b) => {
     if (a !== b) {
-      return moment(b).format("YYYY년 MMMM Do, hh:mm") + "(수정됨)";
+      return moment(b).format("YYYY년 MMMM Do, hh:mm") + "(수정)";
     } else {
       return moment(a).format("YYYY년 MMMM Do, hh:mm");
     }
@@ -62,19 +62,19 @@ function Detail(props) {
           <img
             src={props.PostInfo.image}
             alt=""
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "auto", border: "3px solid white" }}
           />
         ) : null}
-        <p>{props.PostInfo.content}</p>
+        <p className="content">{props.PostInfo.content}</p>
       </Post>
       {user.uid === props.PostInfo.author.uid && (
         <BtnDiv>
           <Link to={`/edit/${props.PostInfo.postNum}`}>
-            <button className="edit">수정</button>
+            <button className="edit">Modify</button>
           </Link>
 
           <button className="delete" onClick={() => DeleteHandler()}>
-            삭제
+            Cancle
           </button>
         </BtnDiv>
       )}
