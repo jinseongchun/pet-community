@@ -3,6 +3,7 @@
 사용법
 
 1. server/config/dev.js 파일에 몽고key와 navercloud(오브젝트 스토리지) 키를 각각 넣어준다.
+
    mongoURI -> 몽고DB
    access_key -> navercloud
    secret_key -> navercloud
