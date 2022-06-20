@@ -5,7 +5,9 @@
 1. server/config/dev.js 파일에 몽고key와 navercloud(오브젝트 스토리지) 키를 각각 넣어준다.
 
    mongoURI -> 몽고DB
+   
    access_key -> navercloud
+   
    secret_key -> navercloud
 
 2. client/src/firebase.js 파일에 파이어베이스 키를 넣어준다.
