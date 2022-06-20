@@ -17,6 +17,9 @@
 4. 'npm start' 를 입력하면 서비스 이용 가능
 
 _참고_
+
 갤러리 페이지 이동하려면 -> http://localhost:5000/gallery
+
 갤러리 작성 페이지 이동하려면 -> http://localhost:5000/upload
+
 스토어 작성 페이지 이동하려면 -> http://localhost:5000/storeUpload
